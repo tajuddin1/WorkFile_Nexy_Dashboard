@@ -1,5 +1,377 @@
 body {
     background: #0D0F11;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     color: #fff;
+}
+
+.form-wrapper {
+    max-width: 545px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.form-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.form-header-top h2 {
+    font-size: 34px;
+    color: #00FFA3;
+}
+
+.form-header-top p {
+    font-size: 18px;
+}
+
+.form-content {
+    background: #191D23;
+    padding: 85px 80px 55px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-content .form-control::placeholder {
+    color: #808080;
+}
+
+
+.form-content .form-control {
+    color: #808080;
+    background: #FFFFFF;
+    border: 2px solid #EFF0F7;
+    box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460D;
+    padding: 8px 14px;
+    font-size: 16.656px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.984px;
+}
+
+.loginForm .form-control {
+    padding: 8px 14px 8px 44px;
+}
+
+.form-content .form-group .input-icon {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+}
+
+.theme-btn-primary {
+    color: #0D0F11 !important;
+    font-size: 16px !important;
+    background-color: #00FFA3 !important;
+    box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
+    border: 1px solid #00FFA3 !important;
+    padding: 10px 15px !important;
+    transition: 0.3s all;
+}
+
+.payment-btn {
+    max-width: 335px;
+    color: #253B80 !important;
+    font-size: 16px !important;
+    background-color: #D9D9D9 !important;
+    box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
+    border: 1px solid #D9D9D9 !important;
+    padding: 10px 15px !important;
+    transition: 0.3s all;
+    gap: 8px;
+    height: 53px;
+}
+
+.theme-gray {
+    color: #808080 !important;
+}
+
+.theme-of-white {
+    color: #FFEAEA !important;
+}
+
+
+.theme-green {
+    color: #00FFA3 !important;
+}
+
+.theme-btn-primary:hover {
+    color: #FFFFFF !important;
+    background-color: #00c47c !important;
+    border: 1px solid #00d688 !important;
+}
+
+.devider span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191D23;
+    padding: 0px 16px;
+    display: block;
+    width: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+.devider span:last-child {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 2px;
+    background-color: #808080;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 16px;
+}
+
+#login-tab .nav-link {
+    color: #FFFFFF;
+}
+
+#login-tab .nav-link.active {
+    color: #00FFA3;
+}
+
+#login-tab .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -0%);
+    border-radius: 50%;
+    background-color: #00FFA3;
+}
+
+.step-bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    width: 40px;
+    background: #0d0f11;
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.step span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.step span:last-child {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.step.active .check-mark {
+    background-color: #00FFA3;
+}
+
+.step.completed .check-mark {
+    background-color: #00FFA3;
+    background-image: url(../images/icon/check.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.step .check-mark {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow-x: visible;
+}
+
+.step .check-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.step .check-mark.hide-bar::after {
+    display: none;
+}
+
+.step.completed .check-mark::after {
+    background-color: #00FFA3;
+}
+
+#multistep-form .form-content {
+    padding: 35px;
+    max-width: 470px;
+    margin: auto;
+}
+
+#multistep-form .form-content.step-3 {
+    padding: 32px;
+    max-width: unset;
+}
+
+#multistep-form .form-content.step-3 h1 {
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 25px;
+}
+
+#multistep-form .form-content.step-3 h1 span {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+}
+
+.inner-payout-step-wrapper {
+    margin-top: 30px;
+}
+
+.bg-theme-deeep-dark {
+    background-color: #050506 !important;
+}
+
+.bg-theme-dark {
+    background-color: #191D23 !important;
+}
+
+.payment.card {
+    min-height: 73vh;
+}
+
+.payment.card h1 {
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.payment-methord {
+    margin-top: 70px;
+}
+
+.product h3 {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+#card-type {
+    background-image: url('../images/icon/cards.png');
+    width: 32px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: -32px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+}
+
+#card-type.visa {
+    background-position: 0 0;
+}
+
+#card-type.mastercard {
+    background-position: -32px 0;
+}
+
+#card-type.amex {
+    background-position: -64px 0;
+}
+
+input#card-number {
+    padding-left: 60px;
+}
+.addCard .form-control::placeholder{
+    color: #A175FF !important;
+}
+.addCard .form-control{
+    color: #A175FF !important;
+}
+.addCard .copun-input .form-control::placeholder{
+    color: #CFBBF9 !important;
+}
+
+.copun-input button {
+    color: #9563FF !important;
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div#step4 {
+    min-height: 86vh;
+}
+.success-mark {
+    margin-top: 40%;
+}
+.nav-link{
+    font-size: 16px;
+}
+.form-label{
+    margin-bottom: 2px !important;
+}
+@media screen and (max-width:590px) {
+    html{
+        font-size: 14px;
+    }
+    .form-content {
+        padding: 40px 30px 30px;
+        gap: 15px;
+    }
+    .loginForm .form-control {
+        padding: 6px 14px 6px 40px;
+    }
+    .form-content .form-control {
+        padding: 6px 14px;
+    }
+    .form-content .form-group .input-icon {
+        top: 7px;
+        left: 13px;
+    }
+    .theme-btn-primary {
+        font-size: 16px !important;
+        padding: 6px 15px !important;
+    }
+    .form-header-top p {
+        font-size: 15px;
+    }
+    #multistep-form .form-content {
+        padding: 30px;
+    }
+    .step .check-mark.hide-bar::after {
+        display: block;
+        background: #0d0f11;
+    }
+    .form-wrapper {
+        overflow: hidden;
+    }
 }

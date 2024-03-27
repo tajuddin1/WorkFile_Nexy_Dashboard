@@ -13,6 +13,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: 10000;
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes fadeInUp {
@@ -31,7 +32,7 @@
   }
   5%{
     opacity: 1;
-    transform: rotate(-90deg); 
+    transform: rotate(-60deg); 
   }
   100% { 
     opacity: 1; 
@@ -40,10 +41,11 @@
 }
 .site-logo{
   opacity: 0;
-  transform: rotate(-90deg);
+  transform: rotate(-60deg);
   animation: rotate 1s ease forwards;
-  animation-delay: -0.5s;
-
+}
+.preloader.inner .site-logo{
+  margin-bottom: 70px;
 }
 .site-name, .spinner {
   opacity: 0;
@@ -62,6 +64,11 @@
 .spinner {
   margin-top: 50px;
   animation-delay: 1.5s;
+}
+
+.preloader.inner.spinner {
+  margin-top: 50px;
+  animation-delay: 1s;
 }
 
 #loader.show{
@@ -180,11 +187,11 @@
 }
 @media screen and (max-width:590px) {
   .preloader .site-name h2 {
-    font-size: 56px;
+    font-size: 48px;
   }
   .spinner {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
   @keyframes lds-ripple {
     0% {
@@ -207,13 +214,13 @@
     }
   
     100% {
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 150px;
       opacity: 0;
     }
   }
   .site-logo img {
-    max-width: 180px;
+    max-width: 150px;
   }
 }
 @media screen and (max-width:330px) {

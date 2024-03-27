@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexy Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awsome Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="loader" class="preloader inner">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="site-logo">
+                <img width="100px" src="assets/images/Nexy_Logo.png" alt="">
+            </div>
+            <div class="spinner">
+                <div class="spiner-ball"></div>
+                <div class="spiner-ball"></div>
+                <div class="spiner-ball"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="form-container">
+            <div class="container-fluid">
+                    <form id="multistep-form">
+                        <!-- Step 1 -->
+                        <div class="step-content" id="step1">
+                            <div class="form-wrapper">
+                                <div class="form-header-top d-flex flex-column justify-content-center align-items-center text-center">
+                                    <div class="form-site-logo mb-3">
+                                        <img width="70" src="assets/images/Nexy_Logo.png" alt="">
+                                    </div>
+                                    <h2 class="fw-bold mb-3">Registe</h2>
+                                    <p class="fw-normal mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incident ut labore et dolore.</p>
+                                </div>
+                                <div class="form-content">
+                                    <h5 class=" mb-0 theme-green text-center">Personal Informations</h5>
+                                    <div class="form-group">
+                                        <label class="form-label mb-0" for="">Username</label>
+                                        <input type="text" class="form-control" placeholder="Please enter username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label mb-0" for="">E-main</label>
+                                        <input type="email" class="form-control" placeholder="Please enter email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label mb-0" for="">Cellphone</label>
+                                        <input type="text" class="form-control" placeholder="Please enter number">
+                                    </div>
+                                    <div class="form-group pb-2">
+                                        <label class="form-label mb-0" for="">Your Password</label>
+                                        <input type="password" class="form-control" placeholder="Please Create a Password">
+                                    </div>
+                                    <button type="button" class="btn theme-btn-primary fw-semibold" onclick="nextStep()">Next Step ></button>
+                                </div>
+                                <div class="text-center mt-2 pb-1">
+                                    <span class="theme-gray">You do have account? </span><a href="index.html" class="fw-normal theme-green"> Login Now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="step-content" id="step2" style="display: none;">
+                            <div class="form-wrapper">
+                                <div class="form-header-top d-flex flex-column justify-content-center align-items-center text-center">
+                                    <div class="form-site-logo mb-3">
+                                        <img width="70" src="assets/images/Nexy_Logo.png" alt="">
+                                    </div>
+                                    <h2 class="fw-bold mb-3">Registe</h2>
+                                    <p class="fw-normal mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incident ut labore et dolore.</p>
+                                </div>
+                                <div class="form-content">
+                                    <h5 class=" mb-0 theme-green text-center">Business Informations</h5>
+                                    <div class="form-group">
+                                        <label class="form-label mb-0" for="">Business Name</label>
+                                        <input type="text" class="form-control" placeholder="Please enter business name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label mb-0" for="">Type of Business</label>
+                                        <input type="text" class="form-control" placeholder="Please enter type of business">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label mb-0" for="">Business Cellphone</label>
+                                        <input type="text" class="form-control" placeholder="Please enter number">
+                                    </div>
+                                    <div class="form-group pb-2">
+                                        <label class="form-label mb-0" for="">Business area</label>
+                                        <input type="text" class="form-control" placeholder="Please enter type of business area">
+                                    </div>
+                                    <button type="button" class="btn theme-btn-primary fw-semibold" onclick="nextStep()">Next Step ></button>
+                                </div>
+                                <div class="text-center mt-2 pb-1">
+                                    <span class="theme-gray">You do have account? </span><a href="index.html" class="fw-normal theme-green"> Login Now!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="step-content" id="step3" style="display: none;">
+                            <div class="inner-payout-step-wrapper">
+                                <div class="inner-step" id="first-step">
+                                    <div class="form-wrapper mt-0">
+                                        <div class="form-header-top d-flex flex-column justify-content-center align-items-center text-center">
+                                            <div class="form-site-logo mb-3">
+                                                <img width="70" src="assets/images/Nexy_Logo.png" alt="">
+                                            </div>
+                                            <h2 class="fw-bold mb-3">Registe</h2>
+                                            <p class="fw-normal mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incident ut labore et dolore.</p>
+                                        </div>
+                                        <div class="form-content step-3">
+                                            <h5 class="mb-0 theme-green text-center">Checkout</h5>
+                                            <h1 class="mb-0 text-center mb-2">R$ 250,00 <br> <span class="theme-green">for month</span></h1>
+                                            <button type="button" class="btn theme-btn-primary fw-semibold" onclick="innernextStep()">Start Now! ></button>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4 pb-1">
+                                        <a href="#" class="theme-green">Beneficit to your business</a>
+                                    </div>
+                                    <div class="row justify-content-around my-4 pb-1">
+                                        <div class="col-2 px-1 px-md-0 d-flex">
+                                            <div class="benifit card bg-theme-dark p-4 d-flex flex-column align-items-center justify-content-center w-100">
+                                                <div class="text-center mb-3">
+                                                    <img width="90px" src="assets/images/icon/page_info.png" alt="">
+                                                </div>
+                                                <span class="text-center theme-green">Control your team</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 px-1 px-md-0 d-flex">
+                                            <div class="benifit card bg-theme-dark p-4 d-flex flex-column align-items-center justify-content-center w-100">
+                                                <div class="text-center mb-3">
+                                                    <img width="90px" src="assets/images/icon/Group 427318988.png" alt="">
+                                                </div>
+                                                <span class="text-center theme-green">Effective lead control</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 px-1 px-md-0 d-flex">
+                                            <div class="benifit card bg-theme-dark p-4 d-flex flex-column align-items-center justify-content-center w-100">
+                                                <div class="text-center mb-3">
+                                                    <img width="90px" src="assets/images/icon/forward-item.png" alt="">
+                                                </div>
+                                                <span class="text-center theme-green">Ease of use and intuitive interface</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 px-1 px-md-0 d-flex">
+                                            <div class="benifit card bg-theme-dark p-4 d-flex flex-column align-items-center justify-content-center w-100">
+                                                <div class="text-center mb-3">
+                                                    <img width="90px" src="assets/images/icon/ocean-protocol-(ocean).png" alt="">
+                                                </div>
+                                                <span class="text-center theme-green">secure and encrypted system</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 px-1 px-md-0 d-flex">
+                                            <div class="benifit card bg-theme-dark p-4 d-flex flex-column align-items-center justify-content-center w-100">
+                                                <div class="text-center mb-3">
+                                                    <img width="90px" src="assets/images/icon/people.png" alt="">
+                                                </div>
+                                                <span class="text-center theme-green">Integrated collaboration</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inner-step" id="second-step">
+                                    <div class="form-site-logo mb-3 text-center">
+                                        <img width="70" src="assets/images/Nexy_Logo.png" alt="">
+                                    </div>
+                                    <div class="row justify-content-around my-4 pb-1">
+                                        <div class="col-7 d-flex">
+                                            <div class="benifit bg-transparent d-flex flex-column w-100">
+                                                <h1 class="mb-4 text-start w-100">Let’s Make Payment</h1>
+                                                <p class="mb-3 theme-gray">To start your subscription, input your card details to make payment. 
+                                                    You will be redirected to your banks authorization page . </p>
+
+                                                <div class="payment-methord d-flex w-100">
+                                                    <ul class="payment-button-group list-unstyled mb-0 w-100">
+                                                        <li class="py-3">
+                                                            <button type="button" class="btn cardPay payment-btn fw-bold d-flex justify-content-center align-items-center w-100">
+                                                                <span>Buy with</span>
+                                                                <img width="40px" src="assets/images/icon/Visa.png" alt="">
+                                                                <img width="40px" src="assets/images/icon/Mastercard.png" alt="">
+                                                                <img width="40px" src="assets/images/icon/Stripe.png" alt="">
+                                                            </button>
+                                                        </li>
+                                                        <li class="py-3">
+                                                            <button type="button" class="btn payment-btn fw-bold d-flex justify-content-center align-items-center w-100">
+                                                                <span>Buy with</span>
+                                                                <img width="80px" src="assets/images/icon/paypal.png" alt="">
+                                                            </button>
+                                                        </li>
+                                                        <li class="py-3">
+                                                            <button type="button" class="btn payment-btn fw-bold d-flex justify-content-center align-items-center w-100">
+                                                                <span>Buy with</span>
+                                                                <img width="75px" src="assets/images/icon/mercado-pago.png" alt="">
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="addCard bg-transparent p-0 m-0" style="display: none;">
+                                                        <form id="payment-form">
+                                                            <div class="form-group mb-3 position-relative">
+                                                                <label for="cardholder-name" class="form-label mb-0 theme-gray">Cardholder’s Name</label>
+                                                                <input type="text" class="form-control" id="cardholder-name" placeholder="PAULINA CHIMAROKE" required autocomplete="off">
+                                                            </div>
+                                                            <div class="form-group mb-3 position-relative">
+                                                                <label for="card-number" class="form-label mb-0 theme-gray">Card Number</label>
+                                                                <div class="position-relative">
+                                                                    <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required autocomplete="off">
+                                                                    <div id="card-type"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="expiry" class="form-label mb-0 theme-gray">Expiry Date</label>
+                                                                    <input type="text" class="form-control" id="expiry" placeholder="03/25" required autocomplete="off">
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="cvc" class="form-label mb-0 theme-gray">CVC</label>
+                                                                    <input type="text" class="form-control" id="cvc" placeholder="654" required autocomplete="off">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group mb-3 position-relative">
+                                                                <label for="discount-code" class="form-label mb-0 theme-gray">Discount Code</label>
+                                                                <div class="copun-input position-relative">
+                                                                    <input type="text" class="form-control" id="discount-code" placeholder="CHIKAMSO-20-OFF" required autocomplete="off">
+                                                                    <button class="btn fw-semibold p-0 m-0">Apply</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-4 pt-2">
+                                                                <button type="button" class="btn btn-pay theme-btn-primary px-5 w-50 fw-bold" onclick="nextStep()">Pay</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 d-flex">
+                                            <div class="payment card bg-theme-deeep-dark p-4 d-flex flex-column w-100 justify-content-between">
+                                                <div class="header-content">
+                                                    <p class="mb-3 theme-gray">You’re paying,</p>
+                                                    <h1>R$ 250,00</h1>
+                                                    <ul class="d-flex flex-column p-0 m-0">
+                                                        <li class="d-flex justify-content-between mb-3">
+                                                            <div class="product">
+                                                                <h3 class="mb-0 theme-of-white">Register</h3>
+                                                                <span class="mb-0 theme-gray">Nexy Dashboard Register</span>
+                                                            </div>
+                                                            <div class="price"><h4 class="mb-0 theme-of-white">R$ 250.00</h4></div>
+                                                        </li>
+                                                        <li class="d-flex justify-content-between mb-3">
+                                                            <div class="product">
+                                                                <h3 class="mb-0 theme-of-white">Discounts & Offers</h3>
+                                                            </div>
+                                                            <div class="price"><h4 class="mb-0 theme-of-white">R$ 0.00</h4></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <ul class="d-flex flex-column p-0 m-0">
+                                                    <hr class="opacity-100 my-5">
+                                                    <li class="d-flex justify-content-between mb-3">
+                                                        <div class="product">
+                                                            <h3 class="mb-0 theme-of-white">Total</h3>
+                                                        </div>
+                                                        <div class="price"><h4 class="mb-0 theme-of-white">R$ 250.00</h4></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="step-content" id="step4" style="display: none;">
+                            <div class="form-wrapper">
+                                <div class="form-header-top d-flex flex-column justify-content-center align-items-center text-center">
+                                    <div class="form-site-logo mb-3">
+                                        <img width="70" src="assets/images/Nexy_Logo.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="text-center success-mark">
+                                    <img width="300px" src="assets/images/icon/check-success.gif" alt="">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a class="btn theme-btn-primary fw-bold w-25" href="index.html">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-wrapper mt-0 px-5 px-md-4">
+                    <ul class="step-bar">
+                        <li class="step active">
+                            <span>Step 1</span>
+                            <div class="check-mark"></div>
+                            <span>Personal Informations</span>
+                        </li>
+                        <li class="step">
+                            <span>Step 2</span>
+                            <div class="check-mark"></div>
+                            <span>Business Informations</span>
+                        </li>
+                        <li class="step">
+                            <span>Step 3</span>
+                            <div class="check-mark hide-bar"></div>
+                            <span>Checkout</span>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
