@@ -571,8 +571,16 @@ div#step4 {
     div#step4 img {
         width: 160px;
     }
+    .addCard .form-control {
+        color: #A175FF !important;
+        font-size: 14px;
+        padding: 6px 14px;
+    }
 }
 @media screen and (max-width:360px) {
+    .addCard .form-control {
+        padding: 5px 10px;
+    }
     html {
         font-size: 12px;
     }
