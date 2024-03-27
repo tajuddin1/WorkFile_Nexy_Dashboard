@@ -310,13 +310,16 @@ body {
 input#card-number {
     padding-left: 60px;
 }
-.addCard .form-control::placeholder{
+
+.addCard .form-control::placeholder {
     color: #A175FF !important;
 }
-.addCard .form-control{
+
+.addCard .form-control {
     color: #A175FF !important;
 }
-.addCard .copun-input .form-control::placeholder{
+
+.addCard .copun-input .form-control::placeholder {
     color: #CFBBF9 !important;
 }
 
@@ -327,50 +330,69 @@ input#card-number {
     top: 50%;
     transform: translateY(-50%);
 }
+
 div#step4 {
     min-height: 86vh;
 }
+
 .success-mark {
     margin-top: 40%;
 }
-.nav-link{
+
+.nav-link {
     font-size: 16px;
 }
-.form-label{
+
+.form-label {
     margin-bottom: 2px !important;
 }
+
 @media screen and (max-width:590px) {
-    html{
+    html {
         font-size: 14px;
     }
+
     .form-content {
         padding: 40px 30px 30px;
         gap: 15px;
+        border-radius: 10px;
     }
-    .loginForm .form-control {
-        padding: 6px 14px 6px 40px;
+    .form-wrapper {
+        margin-top: 20px;
     }
     .form-content .form-control {
         padding: 6px 14px;
     }
+    .form-header-top h2 {
+        font-size: 30px;
+    }
+    .loginForm .form-control {
+        padding: 6px 14px 6px 40px;
+    }
+
     .form-content .form-group .input-icon {
         top: 7px;
         left: 13px;
     }
+
     .theme-btn-primary {
         font-size: 16px !important;
         padding: 6px 15px !important;
     }
+
     .form-header-top p {
-        font-size: 15px;
+        font-size: 14px;
     }
+
     #multistep-form .form-content {
         padding: 30px;
     }
+
     .step .check-mark.hide-bar::after {
         display: block;
         background: #0d0f11;
     }
+
     .form-wrapper {
         overflow: hidden;
     }
