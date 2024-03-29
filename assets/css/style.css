@@ -6,22 +6,27 @@ body {
 
 .form-wrapper {
     max-width: 545px;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     margin-top: 25px;
 }
 
 .form-container {
     max-width: 1280px;
+    min-height: 100vh;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form-header-top h2 {
-    font-size: 34px;
+    font-size: 32px;
     color: #00FFA3;
 }
 
 .form-header-top p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .form-content {
@@ -192,8 +197,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .step {
@@ -205,11 +210,11 @@ body {
     position: relative;
     padding: 20px 0;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     z-index: 1;
 }
 
@@ -283,7 +288,7 @@ body {
 }
 
 #multistep-form .form-content {
-    padding: 35px;
+    padding: 30px;
     max-width: 470px;
     margin: auto;
 }
@@ -320,7 +325,7 @@ body {
 }
 
 .payment.card {
-    min-height: 73vh;
+    min-height: 70vh;
 }
 
 .payment.card h1 {
@@ -423,7 +428,7 @@ input#card-number {
 }
 
 div#step4 {
-    min-height: 86vh;
+    /* min-height: 71vh; */
 }
 
 .success-mark {
@@ -489,7 +494,7 @@ div#step4 {
         padding: 6px 14px;
     }
     .form-header-top h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
     .loginForm .form-control {
         padding: 6px 14px 6px 40px;
@@ -510,7 +515,7 @@ div#step4 {
     }
 
     #multistep-form .form-content {
-        padding: 30px;
+        padding: 25px;
     }
 
     .step .check-mark.hide-bar::after {
@@ -575,6 +580,22 @@ div#step4 {
         color: #A175FF !important;
         font-size: 14px;
         padding: 6px 14px;
+    }
+    .step {
+        width: 35px;
+    }
+    .step .check-mark {
+        width: 25px;
+        height: 25px;
+    }
+    .step .check-mark::after {
+        left: 30px;
+    }
+    .step.completed .check-mark {
+        background-size: 14px;
+    }
+    .step-bar {
+        margin: 20px 0 30px;
     }
 }
 @media screen and (max-width:360px) {
