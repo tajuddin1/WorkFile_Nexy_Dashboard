@@ -400,6 +400,9 @@ input#card-number {
 
 .addCard .form-control {
     color: #a175ff !important;
+    border: 1px solid #a175ff;
+    -webkit-box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460d;
+    box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460d;
 }
 
 .addCard .copun-input .form-control::-webkit-input-placeholder {
