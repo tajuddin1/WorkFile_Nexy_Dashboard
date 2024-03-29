@@ -451,6 +451,10 @@ input#card-number {
     html {
         font-size: 14px;
     }
+    
+    .form-site-logo img {
+        width: 60px !important;
+    }
 
     .form-header-top h2 {
         font-size: 26px;
@@ -655,10 +659,6 @@ input#card-number {
 
     .payment.card {
         min-height: unset;
-    }
-
-    div#step4 img {
-        width: 200px;
     }
 }
 
