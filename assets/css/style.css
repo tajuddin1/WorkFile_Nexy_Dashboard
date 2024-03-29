@@ -444,14 +444,14 @@ input#card-number {
     margin-bottom: 2px !important;
 }
 
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1600px) {
     html {
         font-size: 14px;
     }
 
     .form-header-top h2 {
-        font-size: 28px;
-        margin-bottom: 10px !important;
+        font-size: 26px;
+        margin-bottom: 7px !important;
     }
 
     .form-content .form-group .input-icon {
@@ -480,6 +480,7 @@ input#card-number {
 
     .form-header-top p {
         font-size: 14px;
+        margin-bottom: 15px !important;
     }
 
     .theme-btn-primary {
@@ -586,6 +587,22 @@ input#card-number {
     .success-mark img {
         width: 200px;
     }
+    
+    .step span:last-child {
+        bottom: -15px;
+        white-space: pre-wrap;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 30px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-height: 1000px) {
@@ -608,22 +625,6 @@ input#card-number {
 
     .benifit.card span {
         font-size: 14px;
-    }
-
-    .step span:last-child {
-        bottom: -15px;
-        white-space: pre-wrap;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        height: 30px;
-        text-align: center;
     }
 }
 
