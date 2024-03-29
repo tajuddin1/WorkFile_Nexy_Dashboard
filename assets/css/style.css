@@ -1,5 +1,5 @@
 body {
-    background: #0D0F11;
+    background: #0d0f11;
     font-family: "Inter", sans-serif;
     color: #fff;
 }
@@ -15,14 +15,21 @@ body {
     max-width: 1280px;
     min-height: 100vh;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .form-header-top h2 {
     font-size: 32px;
-    color: #00FFA3;
+    color: #00ffa3;
 }
 
 .form-header-top p {
@@ -30,7 +37,7 @@ body {
 }
 
 .form-content {
-    background: #191D23;
+    background: #191d23;
     padding: 85px 80px 55px;
     border-radius: 32px;
     display: -webkit-box;
@@ -38,8 +45,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -63,13 +70,12 @@ body {
     color: #808080;
 }
 
-
 .form-content .form-control {
     color: #808080;
-    background: #FFFFFF;
-    border: 2px solid #EFF0F7;
-    -webkit-box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460D;
-            box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460D;
+    background: #ffffff;
+    border: 2px solid #eff0f7;
+    -webkit-box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460d;
+    box-shadow: 8.327845573425293px 8.327845573425293px 24.983535766601562px 0px #0202460d;
     padding: 8px 14px;
     font-size: 16.656px;
     font-style: normal;
@@ -88,12 +94,12 @@ body {
 }
 
 .theme-btn-primary {
-    color: #0D0F11 !important;
+    color: #0d0f11 !important;
     font-size: 16px !important;
-    background-color: #00FFA3 !important;
+    background-color: #00ffa3 !important;
     -webkit-box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
-            box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
-    border: 1px solid #00FFA3 !important;
+    box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
+    border: 1px solid #00ffa3 !important;
     padding: 10px 15px !important;
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
@@ -102,12 +108,12 @@ body {
 
 .payment-btn {
     max-width: 335px;
-    color: #253B80 !important;
+    color: #253b80 !important;
     font-size: 16px !important;
-    background-color: #D9D9D9 !important;
+    background-color: #d9d9d9 !important;
     -webkit-box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
-            box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
-    border: 1px solid #D9D9D9 !important;
+    box-shadow: 8.328px 8.328px 24.984px 0px rgba(2, 2, 70, 0.15) !important;
+    border: 1px solid #d9d9d9 !important;
     padding: 10px 15px !important;
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
@@ -121,16 +127,15 @@ body {
 }
 
 .theme-of-white {
-    color: #FFEAEA !important;
+    color: #ffeaea !important;
 }
 
-
 .theme-green {
-    color: #00FFA3 !important;
+    color: #00ffa3 !important;
 }
 
 .theme-btn-primary:hover {
-    color: #FFFFFF !important;
+    color: #ffffff !important;
     background-color: #00c47c !important;
     border: 1px solid #00d688 !important;
 }
@@ -140,12 +145,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: #191D23;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #191d23;
     padding: 0px 16px;
     display: block;
     width: 70px;
@@ -155,38 +160,38 @@ body {
 
 .devider span:last-child {
     position: absolute;
-    content: '';
+    content: "";
     width: 100vw;
     height: 2px;
     background-color: #808080;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     padding: 0px 16px;
 }
 
 #login-tab .nav-link {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 #login-tab .nav-link.active {
-    color: #00FFA3;
+    color: #00ffa3;
 }
 
 #login-tab .nav-link.active::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 8px;
     height: 8px;
     left: 50%;
     top: 0;
     -webkit-transform: translate(-50%, -0%);
-        -ms-transform: translate(-50%, -0%);
-            transform: translate(-50%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
     border-radius: 50%;
-    background-color: #00FFA3;
+    background-color: #00ffa3;
 }
 
 .step-bar {
@@ -223,8 +228,8 @@ body {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     font-size: 10px;
     white-space: nowrap;
 }
@@ -235,18 +240,18 @@ body {
     bottom: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     font-size: 10px;
     white-space: nowrap;
 }
 
 .step.active .check-mark {
-    background-color: #00FFA3;
+    background-color: #00ffa3;
 }
 
 .step.completed .check-mark {
-    background-color: #00FFA3;
+    background-color: #00ffa3;
     background-image: url(../images/icon/check.png);
     background-size: 20px;
     background-repeat: no-repeat;
@@ -264,18 +269,18 @@ body {
 }
 
 .step .check-mark::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     left: 35px;
     width: 200px;
     height: 2px;
     background-color: #fff;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     z-index: 0;
 }
 
@@ -284,7 +289,7 @@ body {
 }
 
 .step.completed .check-mark::after {
-    background-color: #00FFA3;
+    background-color: #00ffa3;
 }
 
 #multistep-form .form-content {
@@ -321,16 +326,16 @@ body {
 }
 
 .bg-theme-dark {
-    background-color: #191D23 !important;
+    background-color: #191d23 !important;
 }
 
 .payment.card {
-    min-height: 70vh;
+    min-height: 600px;
 }
 
 .payment.card h1 {
     font-size: 64px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 70px;
 }
 
@@ -344,7 +349,7 @@ body {
 }
 
 #card-type {
-    background-image: url('../images/icon/cards.png');
+    background-image: url("../images/icon/cards.png");
     width: 32px;
     height: 22px;
     background-repeat: no-repeat;
@@ -352,8 +357,8 @@ body {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     left: 14px;
 }
 
@@ -374,61 +379,57 @@ input#card-number {
 }
 
 .addCard .form-control::-webkit-input-placeholder {
-    color: #A175FF !important;
+    color: #a175ff !important;
 }
 
 .addCard .form-control::-moz-placeholder {
-    color: #A175FF !important;
+    color: #a175ff !important;
 }
 
 .addCard .form-control:-ms-input-placeholder {
-    color: #A175FF !important;
+    color: #a175ff !important;
 }
 
 .addCard .form-control::-ms-input-placeholder {
-    color: #A175FF !important;
+    color: #a175ff !important;
 }
 
 .addCard .form-control::placeholder {
-    color: #A175FF !important;
+    color: #a175ff !important;
 }
 
 .addCard .form-control {
-    color: #A175FF !important;
+    color: #a175ff !important;
 }
 
 .addCard .copun-input .form-control::-webkit-input-placeholder {
-    color: #CFBBF9 !important;
+    color: #cfbbf9 !important;
 }
 
 .addCard .copun-input .form-control::-moz-placeholder {
-    color: #CFBBF9 !important;
+    color: #cfbbf9 !important;
 }
 
 .addCard .copun-input .form-control:-ms-input-placeholder {
-    color: #CFBBF9 !important;
+    color: #cfbbf9 !important;
 }
 
 .addCard .copun-input .form-control::-ms-input-placeholder {
-    color: #CFBBF9 !important;
+    color: #cfbbf9 !important;
 }
 
 .addCard .copun-input .form-control::placeholder {
-    color: #CFBBF9 !important;
+    color: #cfbbf9 !important;
 }
 
 .copun-input button {
-    color: #9563FF !important;
+    color: #9563ff !important;
     position: absolute;
     right: 9px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-
-div#step4 {
-    /* min-height: 71vh; */
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .success-mark {
@@ -443,59 +444,232 @@ div#step4 {
     margin-bottom: 2px !important;
 }
 
-@media screen and (max-width:1024px) {
-    .benifit.card img {
-        width: 70px;
-    }
-    .benifit.card span {
-        font-size: 14px;
-    }
-}
-@media screen and (max-width:768px) {
-    .payment.card h1 {
-        font-size: 48px;
-        margin-bottom: 50px;
-    }
-    .product h3 {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .price h4 {
-        font-size: 20px;
-    }
-    .payment-btn {
-        height: 46px;
-    }
-    .payment-methord {
-        margin-top: 25px;
-    }
-    .payment.card {
-        min-height: unset;
-    }
-    div#step4 img{
-        width: 200px;
-    }
-
-}
-@media screen and (max-width:590px) {
+@media screen and (max-width: 1540px) {
     html {
         font-size: 14px;
     }
 
+    .form-header-top h2 {
+        font-size: 28px;
+        margin-bottom: 10px !important;
+    }
+
+    .form-content .form-group .input-icon {
+        top: 6px;
+    }
+
+    .loginForm .form-control {
+        padding: 5px 14px 5px 44px !important;
+    }
+
+    .form-content {
+        padding: 41px 40px 30px;
+        border-radius: 20px;
+        gap: 16px;
+    }
+
+    .form-wrapper {
+        overflow: hidden;
+        max-width: 410px;
+        margin-top: 0px;
+    }
+
+    .form-site-logo.mb-3 {
+        margin-bottom: 2px !important;
+    }
+
+    .form-header-top p {
+        font-size: 14px;
+    }
+
+    .theme-btn-primary {
+        font-size: 14px !important;
+        padding: 6px 15px !important;
+    }
+
+    .form-content .form-control {
+        padding: 5px 14px;
+        font-size: 14.656px;
+        line-height: 20.984px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    #multistep-form .form-content {
+        padding: 25px 30px;
+        max-width: 425px;
+    }
+
+    .step {
+        width: 35px;
+    }
+
+    .step .check-mark {
+        width: 25px;
+        height: 25px;
+    }
+
+    .step .check-mark::after {
+        left: 30px;
+        width: 210px;
+    }
+
+    .step-bar {
+        margin: 21px 0;
+    }
+
+    .inner-payout-step-wrapper {
+        margin-top: 0px;
+    }
+
+    #multistep-form .form-content.step-3 {
+        padding: 30px;
+        max-width: 400px;
+    }
+
+    #multistep-form .form-content.step-3 h1 {
+        font-size: 50px;
+        line-height: 24px;
+        margin-top: 17px;
+        margin-bottom: 15px !important;
+    }
+
+    #multistep-form .form-content.step-3 h1 span {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+    .form-container {
+        max-width: 1024px;
+    }
+
+    .price h4 {
+        font-size: 20px;
+    }
+
+    .payment-btn img {
+        height: 25px;
+        width: auto;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    .payment.card h1 {
+        font-size: 46px;
+        margin-bottom: 56px;
+    }
+
+    .product h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .payment-btn {
+        font-size: 14px !important;
+        padding: 6px 15px !important;
+        gap: 5px;
+        height: 40px;
+    }
+
+    .payment.card {
+        min-height: unset;
+    }
+
+    .step .check-mark.hide-bar::after {
+        display: block;
+        background: #0d0f11;
+        height: 4px;
+    }
+
+    .success-mark img {
+        width: 200px;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    .form-container {
+        min-height: 100%;
+        max-height: 1100px;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    .payment.card {
+        min-height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .benifit.card img {
+        width: 70px;
+    }
+
+    .benifit.card span {
+        font-size: 14px;
+    }
+
+    .step span:last-child {
+        bottom: -15px;
+        white-space: pre-wrap;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .payment.card h1 {
+        font-size: 44px;
+        margin-bottom: 50px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .price h4 {
+        font-size: 20px;
+    }
+
+    .payment-methord {
+        margin-top: 25px;
+    }
+
+    .payment.card {
+        min-height: unset;
+    }
+
+    div#step4 img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 590px) {
     .form-content {
         padding: 40px 30px 30px;
         gap: 15px;
         border-radius: 10px;
     }
+
     .form-wrapper {
         margin-top: 20px;
     }
-    .form-content .form-control {
-        padding: 6px 14px;
-    }
+
     .form-header-top h2 {
         font-size: 28px;
     }
+
     .loginForm .form-control {
         padding: 6px 14px 6px 40px;
     }
@@ -505,151 +679,179 @@ div#step4 {
         left: 13px;
     }
 
-    .theme-btn-primary {
-        font-size: 16px !important;
-        padding: 6px 15px !important;
-    }
+
 
     .form-header-top p {
         font-size: 14px;
     }
 
-    #multistep-form .form-content {
-        padding: 25px;
-    }
-
-    .step .check-mark.hide-bar::after {
-        display: block;
-        background: #0d0f11;
-    }
-
-    .form-wrapper {
-        overflow: hidden;
-    }
 
     .benifit.card img {
-        width: 50px;
+        width: 35px;
     }
-    #multistep-form .form-content.step-3 h1 {
-        font-size: 68px;
-        line-height: 34px;
-        margin-top: 10px;
-    }
+
     #multistep-form .form-content.step-3 h1 span {
         font-size: 22px;
     }
+
     .payment-methord {
         margin-top: 0px;
     }
-    .step span:last-child {
-        bottom: -15px;
-        white-space: pre-wrap;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        height: 30px;
-        text-align: center;
-    }
+
     .nav-link {
         font-size: 14px;
     }
+
     .form-site-logo img {
         width: 50px !important;
     }
+
     .product h3 {
         font-size: 14px;
         line-height: 20px;
     }
+
     .price h4 {
         font-size: 14px;
     }
+
     .payment.card h1 {
         font-size: 38px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
+
     div#step4 img {
         width: 160px;
     }
+
     .addCard .form-control {
-        color: #A175FF !important;
+        color: #a175ff !important;
         font-size: 14px;
         padding: 6px 14px;
     }
+
     .step {
         width: 35px;
     }
+
     .step .check-mark {
         width: 25px;
         height: 25px;
     }
+
     .step .check-mark::after {
         left: 30px;
     }
+
     .step.completed .check-mark {
         background-size: 14px;
     }
+
     .step-bar {
         margin: 20px 0 30px;
     }
+
+    .inner-payout-step-wrapper {
+        margin-top: 20px;
+    }
+
+    .benifit.card span {
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    #multistep-form .form-content.step-3 {
+        padding: 20px 25px;
+        max-width: 400px;
+    }
+
+    #multistep-form .form-content.step-3 h1 span {
+        font-size: 15px;
+        line-height: 14px;
+    }
+
+    #multistep-form .form-content.step-3 h1 {
+        font-size: 40px;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-bottom: 9px !important;
+    }
+
+    .form-header-top p {
+        font-size: 12px;
+        margin-bottom: 15px !important;
+    }
+
+    .form-header-top h2 {
+        font-size: 26px;
+    }
 }
-@media screen and (max-width:360px) {
+
+@media screen and (max-width: 360px) {
     .addCard .form-control {
         padding: 5px 10px;
     }
+
     html {
         font-size: 12px;
     }
+
     div#step4 {
         min-height: 60vh;
     }
+
     .nav-link {
         font-size: 12px;
     }
+
     #login-tab .nav-link.active::after {
         width: 5px;
         height: 5px;
     }
+
     .step {
         width: 30px;
     }
+
     .step .check-mark {
         width: 20px;
         height: 20px;
     }
+
     .step .check-mark::after {
         left: 25px;
     }
+
     .step.completed .check-mark {
         background-size: 14px;
     }
+
     .form-content {
         padding: 30px 25px 25px;
         gap: 15px;
         border-radius: 10px;
     }
+
     .form-wrapper {
         margin-top: 20px;
     }
+
     .form-content .form-control {
         padding: 5px 10px;
         font-size: 14px;
     }
+
     .form-header-top h2 {
-        font-size: 26px;
+        font-size: 24px;
     }
+
     .loginForm .form-control {
         padding: 5px 10px 5px 40px;
         font-size: 14px;
     }
 
     .theme-btn-primary {
-        font-size: 15px !important;
+        /* font-size: 15px !important; */
         padding: 5px 15px !important;
     }
 
@@ -673,31 +875,23 @@ div#step4 {
     .benifit.card img {
         width: 50px;
     }
+
     #multistep-form .form-content.step-3 h1 {
-        font-size: 46px;
-        line-height: 24px;
+        font-size: 42px;
+        line-height: 20px;
         margin-top: 10px;
     }
+
+    .inner-payout-step-wrapper {
+        margin-top: 5px;
+    }
+
     #multistep-form .form-content.step-3 h1 span {
         font-size: 16px;
         line-height: 16px;
     }
+
     .payment-methord {
         margin-top: 0px;
-    }
-    .step span:last-child {
-        bottom: -15px;
-        white-space: pre-wrap;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        height: 30px;
-        text-align: center;
     }
 }

@@ -142,18 +142,18 @@
 
 
 
-@media screen and (max-width:768px) {
-  .site-name {
-    margin-top: 10px;
+@media screen and (max-width:1400px) {
+  .site-logo img {
+    width: 150px;
   }
   .preloader .site-name h2 {
-    font-size: 66px;
-    font-weight: 500 !important;
+      font-size: 60px;
   }
   .spinner {
-    margin-top: 30px;
-    width: 180px;
-    height: 180px;
+      display: inline-block;
+      position: relative;
+      width: 160px;
+      height: 160px;
   }
   @keyframes lds-ripple {
     0% {
@@ -176,53 +176,65 @@
     }
   
     100% {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
+      opacity: 0;
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .site-name {
+    margin-top: 10px;
+  }
+  .preloader .site-name h2 {
+    font-size: 58px;
+    font-weight: 500 !important;
+  }
+  .spinner {
+    margin-top: 30px;
+    width: 130px;
+    height: 130px;
+  }
+  @keyframes lds-ripple {
+    0% {
+  
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+    }
+  
+    4.9% {
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+    }
+  
+    5% {
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+    }
+  
+    100% {
+      width: 130px;
+      height: 130px;
       opacity: 0;
     }
   }
   .site-logo img {
-    max-width: 180px;
+    max-width: 120px;
   }
 }
 @media screen and (max-width:590px) {
   .preloader .site-name h2 {
     font-size: 48px;
   }
-  .spinner {
-    width: 150px;
-    height: 150px;
-  }
-  @keyframes lds-ripple {
-    0% {
-  
-      width: 20px;
-      height: 20px;
-      opacity: 0;
-    }
-  
-    4.9% {
-      width: 20px;
-      height: 20px;
-      opacity: 0;
-    }
-  
-    5% {
-      width: 20px;
-      height: 20px;
-      opacity: 1;
-    }
-  
-    100% {
-      width: 150px;
-      height: 150px;
-      opacity: 0;
-    }
-  }
+
   .site-logo img {
-    max-width: 150px;
+    max-width: 100px;
   }
 }
+
 @media screen and (max-width:330px) {
   .preloader .site-name h2 {
     font-size: 42px;
@@ -258,7 +270,5 @@
       opacity: 0;
     }
   }
-  .site-logo img {
-    max-width: 120px;
-  }
+
 }

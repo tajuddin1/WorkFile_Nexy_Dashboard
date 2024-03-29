@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('#loader').addClass('show');
+    $('body').addClass('overflow-hidden');
     setTimeout(function() {
         $('#loader').removeClass('show');
+        $('body').removeClass('overflow-hidden');
     }, 3500);
 });
 
