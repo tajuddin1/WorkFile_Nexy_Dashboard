@@ -603,6 +603,9 @@ input#card-number {
         height: 30px;
         text-align: center;
     }
+    .payment-methord {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-height: 1000px) {
